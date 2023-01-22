@@ -1,12 +1,16 @@
 {
 	"name": "obsidian-insert-book",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Script to add template file, to create book rating database (https://github.com/n1ckisthereu/InsertBook)",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
 		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
-		"version": "node version-bump.mjs && git add manifest.json versions.json"
+		"version": "node version-bump.mjs && git add manifest.json versions.json",
+		"release": "standard-version"
+	},
+	"standard-version": {
+		"t": ""
 	},
 	"keywords": [],
 	"author": "nick",
@@ -17,6 +21,7 @@
 		"@typescript-eslint/parser": "5.29.0",
 		"builtin-modules": "3.3.0",
 		"esbuild": "0.14.47",
+		"standard-version": "^9.5.0",
 		"tslib": "2.4.0",
 		"typescript": "4.7.4"
 	},
