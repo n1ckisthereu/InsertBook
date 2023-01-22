@@ -1,4 +1,4 @@
-name: Release Obsidian plugin
+name: Release Obsidian Insert Book plugin
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - "*"
 
 env:
-  PLUGIN_NAME: your-plugin-id # Change this to match the id of your plugin.
+  PLUGIN_NAME: obsidian-insert-book # Change this to match the id of your plugin.
 
 jobs:
   build:
