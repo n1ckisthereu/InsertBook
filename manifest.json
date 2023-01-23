@@ -1,7 +1,7 @@
 {
 	"id": "obsidian-insert-book",
 	"name": "InsertBook",
-	"version": "1.0.1",
+	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
 	"description": "Script to add template file, to create book rating database (https://github.com/n1ckisthereu/InsertBook)",
 	"author": "nick",
