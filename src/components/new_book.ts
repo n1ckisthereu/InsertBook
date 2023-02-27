@@ -1,4 +1,4 @@
-import { App, DropdownComponent, Modal, Setting } from "obsidian";
+import { App, Component, DropdownComponent, Modal, Setting, ToggleComponent } from "obsidian";
 import { Book } from 'src/models/book';
 
 export class NewBook extends Modal {
@@ -89,7 +89,7 @@ export class NewBook extends Modal {
           this.book.rating = value
         })
       })
-        
+
     new Setting(contentEl)
       .addButton((btn) =>
         btn

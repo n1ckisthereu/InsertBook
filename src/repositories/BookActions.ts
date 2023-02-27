@@ -40,7 +40,8 @@ rating :: ${book.rating}
             query
         ) => {
             
-            let File = this.app.vault.getAbstractFileByPath(bookIndex);
+            let File = this.app.vault.getAbstractFileByPath(`${bookIndex}.md`);
+            console.log(File)
             if(File instanceof TFile){
                 this.app.fileManager.processFrontMatter(File, (frontMatter) => {
                     frontMatter["book_name"] = query.name_of_book.toLowerCase()
