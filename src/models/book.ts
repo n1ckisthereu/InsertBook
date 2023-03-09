@@ -7,7 +7,8 @@ export class Book {
         pages_read: string = '10',
         tags: string = '#tag1 #tag2 #tag3',
         status: string = 'Reading',
-        rating: string = '⭐'
+        rating: string = '⭐',
+        book_directory: boolean = true
     ){   
         this.name_of_book = name_of_book;
         this.book_search = name_of_book
@@ -18,10 +19,10 @@ export class Book {
         this.tags = tags;
         this.status = status;
         this.rating = rating;
+        this.book_directory = book_directory;
     }
     name_of_book: string;
     book_search: string
-
     author: string;
     cover_link: string;
     number_of_pages: string;
@@ -29,6 +30,7 @@ export class Book {
     tags: string;
     status: string
     rating: string
+    book_directory: boolean
 
 
     public tagsMax(tags:string): string {

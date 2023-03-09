@@ -35,5 +35,16 @@ export class SampleSettingTab extends PluginSettingTab {
                     this.plugin.settings.bookIndex = value;
                     await this.plugin.saveSettings();
                 }));
+
+        new Setting(containerEl)
+            .setName('Directory notes')
+            .setDesc('notes directory for your books')
+            .addText(text => text
+                .setPlaceholder('enter path to notes')
+                .setValue(this.plugin.settings.notesDir)
+                .onChange(async (value) => {
+                    this.plugin.settings.notesDir = value;
+                    await this.plugin.saveSettings();
+                }));
     }
 }

@@ -91,6 +91,15 @@ export class NewBook extends Modal {
       })
 
     new Setting(contentEl)
+      .setName("Create folder for this book")
+      .addToggle((component : ToggleComponent) => {
+        component.setValue(true)
+        component.onChange((value) => {
+          this.book.book_directory = value
+        })
+      })
+
+    new Setting(contentEl)
       .addButton((btn) =>
         btn
           .setButtonText("Submit")

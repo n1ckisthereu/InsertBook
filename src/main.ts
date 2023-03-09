@@ -5,7 +5,8 @@ import { MyPluginSettings } from './interfaces/ISettings';
 
 const DEFAULT_SETTINGS: MyPluginSettings = {
 	bookDatabase: 'books/books_db',
-	bookIndex: 'books/My Books'
+	bookIndex: 'books/My Books',
+	notesDir: 'books/notes'
 }
 
 export default class MyPlugin extends Plugin {
