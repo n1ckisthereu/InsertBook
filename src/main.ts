@@ -4,7 +4,7 @@ import { BookActions } from 'src/repositories/BookActions'
 import { MyPluginSettings } from './interfaces/ISettings';
 
 const DEFAULT_SETTINGS: MyPluginSettings = {
-	bookDatabase: 'books',
+	bookDatabase: 'books/books_db',
 	bookIndex: 'books/My Books'
 }
 
