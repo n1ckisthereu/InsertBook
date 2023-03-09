@@ -13,7 +13,7 @@ TABLE WITHOUT ID
 file.link As "Name",
 book_search as Rating,
 "✍️" + author as Author,
-this.file.frontmatter.book_name as Tag,
+tags as Tag,
 "📖 - " +status as Status,
 "<progress value=" + pages_read + " max=" + pages + "></progress>
 " + round((pages_read/pages) * 100) + "   % Completed" AS Pg
