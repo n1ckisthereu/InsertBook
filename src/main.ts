@@ -21,7 +21,7 @@ export default class MyPlugin extends Plugin {
 			name: 'insert a new book',
 			callback: () => {
 				const bk = new BookActions(this.app);
-				bk.createNewBook(this.settings.bookDatabase)
+				bk.createNewBook(this.settings.bookDatabase, this.settings.notesDir)
 			}
 		});
 

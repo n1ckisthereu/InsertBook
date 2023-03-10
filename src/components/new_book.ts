@@ -1,4 +1,4 @@
-import { App, Component, DropdownComponent, Modal, Setting, ToggleComponent } from "obsidian";
+import { App, DropdownComponent, Modal, Setting, ToggleComponent } from "obsidian";
 import { Book } from 'src/models/book';
 
 export class NewBook extends Modal {
@@ -95,7 +95,7 @@ export class NewBook extends Modal {
       .addToggle((component : ToggleComponent) => {
         component.setValue(true)
         component.onChange((value) => {
-          this.book.book_directory = value
+          this.book.notesDir = value
         })
       })
 
