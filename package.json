@@ -1,6 +1,6 @@
 {
 	"name": "obsidian-insert-book",
-	"version": "1.0.0",
+	"version": "0.0.2",
 	"description": "Script to add template file, to create book rating database (https://github.com/n1ckisthereu/InsertBook)",
 	"main": "main.js",
 	"scripts": {
