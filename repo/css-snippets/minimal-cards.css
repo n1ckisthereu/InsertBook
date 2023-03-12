@@ -260,3 +260,8 @@
         --cards-columns: repeat(8, minmax(0, 1fr));
    }
 }
+
+.full-width .markdown-preview-section {
+    max-width: 100% !important;
+}
+    
